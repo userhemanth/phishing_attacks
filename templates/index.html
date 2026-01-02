@@ -25,11 +25,12 @@
             <h2>PHISHING URL DETECTION</h2>
     
             <br>
-            <form action="/" method ="post">
+            <form action="/" method ="post" onsubmit="document.getElementById('loading').style.display='block'">
                 <input type="text" class="form__input" name ='url' id="url" placeholder="Enter URL" required="" />
                 <label for="url" class="form__label">URL</label>
                 <button class="button" role="button" >Check here</button>
             </form>
+            <div id="loading" style="display:none; color: white;">Loading... Please wait for feature extraction.</div>
            
     </div>
     
